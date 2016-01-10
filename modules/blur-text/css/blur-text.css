@@ -1,0 +1,4 @@
+#blur h1{
+	text-shadow: 0 0 20px red;
+	-webkit-filter:blur(1px);
+}

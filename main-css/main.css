@@ -1,0 +1,149 @@
+@import url("../modules/menu/css/menu.css");
+@import url("../modules/3-boxes/css/3boxes.css");
+@import url("../modules/blur-text/css/blur-text.css");
+@import url("../modules/border/css/border.css");
+@import url("../modules/button/css/button.css");
+@import url("../modules/empty/css/empty.css");
+@import url("../modules/first-last-para/css/first-last-para.css");
+@import url("../modules/first-line&footer/css/first-line&footer.css");
+@import url("../modules/format/css/format.css");
+@import url("../modules/hover/css/hover.css");
+@import url("../modules/hover-box/css/hover-box.css");
+@import url("../modules/image-circle/css/image-circle.css");
+@import url("../modules/list/css/list.css");
+@import url("../modules/ribbon/css/ribbon.css");
+@import url("../modules/face/css/face.css");
+/* ------------------------------------Html-Body------------------------------- */
+/* ---------------------------------------------------------------------------- */
+html, body {
+	width:100%; padding:0; margin:0;
+}
+body {
+	background: #292522 url(../images/bg.png) repeat center center;color: #3F3F3F;font: 16px/22px Arial, Helvetica, sans-serif;
+}
+/* -------------------------------------Top--------------------------------- */
+/* ---------------------------------------------------------------------------- */
+nav ul {
+	list-style: none;
+	margin-left: 0px;
+}
+nav ul.contact li {
+	margin-right: 20px;
+	float: left;
+}
+
+.mail p{
+	background: url(../images/Mail.png) no-repeat 2px 2px;color:#fff;padding-left: 30px;font-size:15px;
+}
+.phone p{
+	background: url(../images/Phone.png) no-repeat 2px 2px;color:#fff;padding-left: 30px;font-size:15px;
+}
+img{
+	width:30px;height:25px;
+}
+.buttons{
+	float:right;
+}
+.buttons li{
+	float:left; padding-left: 5px;
+}
+/* -------------------------------------header--------------------------------- */
+/* ---------------------------------------------------------------------------- */
+header{
+	background: #E4000D url(../images/bg-header.png) repeat;padding:30px 0;
+}
+.top{ 
+	width: 1340px; padding-top:-50px;
+}
+.top:after {
+	content: ""; display: block;clear: both;
+}
+.logo{
+	display:inline-block;
+}
+.logo img{
+	width:250px;height:80px;
+	padding-left:550px;
+
+}
+.site-title{
+	background-color:#333333; color:#fff;position: relative;padding: 6px;
+}
+.site-title:after{
+	content:'';
+	background:url(../images/bg-1.png) repeat-x;background-color:#333333;;
+	height:10px;
+	width:100%;
+	left:0;
+	bottom:-12px;
+	position:absolute;
+	z-index: 9999;
+}
+h2{
+	text-align: center;
+}
+
+.top .row:before,.row:after { 
+	content: ''; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; 
+}
+.top .row:after{
+	clear: both; 
+}
+.top .row{
+	zoom: 1;
+}
+#mob-main{
+	display:none;
+}
+@media screen and (max-width: 600px) and (min-width: 401px){
+/*media query for top*/
+nav ul.contact li {
+	float: left;
+}
+.buttons img{
+	width:20px;height:18px;
+}
+.buttons{
+	float:right;position:relative;
+}
+.buttons li{
+	float:left; padding-left: 5px;
+}
+/* media queries for logo and header */
+.logo img{
+	width:200px;height:80px;padding-left:200px;
+}
+h2{
+	max-width: 600px;
+	text-align: left;
+}
+}
+@media screen and  (max-width: 400px) {
+/*media query for top*/
+.top nav{
+	display:none;
+}
+/* media queries for logo and header */
+.top{ 
+	 margin: 0 auto; padding:5px 5px;
+}
+.logo img{
+	width:150px;height:80px;padding-left:100px;
+}
+.site-title{
+	visibility: hidden;
+}
+
+#menuID{
+	display:none;
+}
+#mob-main{
+	padding-top: -1000px;
+	color:white;
+	font-size: 30px;
+	display:block;
+}
+.align{
+	margin-top:180px;
+}
+}

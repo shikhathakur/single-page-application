@@ -1,0 +1,33 @@
+.box {
+  width:200px;height:200px;
+  position:relative;
+  border:1px solid white;
+  background:white;
+  overflow: hidden;
+}
+.ribbon {
+  position: absolute;
+  left: 19px; top:-4px;
+  z-index: 1;
+  width: 120px; height: 100px; 
+  text-align: right;
+}
+.ribbon span {
+  font-size: 10px;
+  color: white; 
+  text-transform: uppercase; 
+  text-align: center;
+  font-weight: bold; line-height: 20px;
+  transform: rotate(315deg);
+  -webkit-transform: rotate(315deg); /* Needed for Safari */
+  width: 220px;
+  height:20px;
+  display: block;
+  background: red;
+  border:2px solid white;
+  box-shadow: 0 0px 0px 2px rgb(220, 14, 14);
+  position: absolute;
+  top: 19px; right: -21px;
+  text-align:center;
+  padding:10px;
+}

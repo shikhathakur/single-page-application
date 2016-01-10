@@ -1,0 +1,23 @@
+#image {
+  position:relative;
+  margin:0 auto;
+}
+#image img {
+  position:absolute;
+  height:281px;
+  width:450px;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+#image img.top:hover {
+  opacity:0;
+}
+@media screen and  (max-width: 400px) {
+#image img {
+  position:absolute;
+  height:200px;
+  width:200px;
+}
+}

@@ -1,0 +1,21 @@
+.button{
+ 	padding: 20px;
+ 	margin: 5px;
+ 	width:200px;
+ 	background-color: blue;
+ 	font-size: 20px;
+ 	font-weight: bold;
+ 	border: 2px dashed yellow;
+ 	border-radius: 10px;
+ 	box-shadow:0 0 0 10px #2C3DEF , 0 0 20px 20px #b8b894;
+ 	color:white;
+}
+.button:hover {
+  	background: black;
+  	text-decoration: none;
+  	box-shadow: 0 0 0 10px #040404 , 0 0 20px 20px #b8b894;
+}
+@media screen and  (max-width: 400px) {
+.button { 
+	width:150px;
+}

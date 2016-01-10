@@ -1,0 +1,18 @@
+#empty-para p{
+	width:200px;
+	height:200px;
+ 	background-color: blue;
+  	font-size: 20px;
+ 	border: 2px solid yellow;
+ 	border-radius: 10px;
+  	color:white;
+}
+#empty-para p:empty {
+	background: red;
+}
+@media screen and  (max-width: 400px) {
+#empty-para p{ 
+	width:150px;
+	height:150px;
+}
+}

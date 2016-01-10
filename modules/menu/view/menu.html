@@ -1,0 +1,39 @@
+<nav class="menu">
+	<ul >
+		<li ><a href="main.html">Home</a></li>
+		<li ><a href="#">My Work</a>
+			<ul>
+      	<li><a onclick="fnShowList()">List</a></li>
+      	<li><a onclick="fnShow3Boxes()" >3-Boxes</a></li>
+      	<li><a onclick="fnShowBlurredText()">Blur-Text</a></li>
+      	<li><a onclick="fnShowBorderImage()">Border</a></li>
+      	<li><a onclick="fnShowButton()">Button</a></li>
+      	<li><a onclick="fnShowEmpty()">Empty-Para</a></li>
+      	<li><a onclick="fnShowFirstLastPara()">First-Last-Para</a></li>
+      	<li><a onclick="fnShowFirstLine()">First-Line&nbsp;Footer</a></li>
+      	<li><a onclick="fnShowColFormat()">Column Format</a></li>
+      </ul>
+		</li>
+		<li ><a href="#">Gallery</a>
+			<ul>
+      		<li><a onclick="fnShowHoverImage()">Hover-Image</a></li>
+      		<li><a onclick="fnShowImageCircle()">Image-Circle</a></li>
+      		<li><a onclick="fnShowRibbon()">Ribbon</a></li>
+          <li><a onclick="fnShowHoverBox()">Hover-Box</a></li>
+          <li><a onclick="fnShowHumanFacePage()">Human-Face</a></li>
+      </ul>
+		</li>
+    <li ><a href="#loginScreen">Login</a></li>
+      <div id="loginScreen"> <a href="#" class="cancel">&times;</a> 
+        <form autocomplete="on" onsubmit="fnSuccess()">
+          <p> First name:<input type="text" name="first_name" placeholder="first name"  autofocus required/> </p>
+          <p> Last name:<input type="text" name="last_name" placeholder="last name"/></p>
+          <p>User name :<input type="text" name="user_id"  required placeholder="username@gmail.com" autocomplete="off"/></p>
+          <p> confirm User name:<input type="text" name="user_id"  required placeholder="username@gmail.com" autocomplete="off"/></p>
+          <p>Password:<input type="password" name="password" required placeholder="************"/></p>
+          <input type="submit" value="Submit">
+        </form>
+      </div> 
+      <div id="cover"> </div> 
+  </ul>
+</nav>

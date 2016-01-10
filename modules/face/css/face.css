@@ -1,0 +1,144 @@
+.face {
+    background-color: lightgrey;
+    width: 250px;
+    height:300px;
+    padding: 5px;
+    border: 10px solid black;
+    margin: 10px;
+    border-radius: 30px;
+    clear:both;
+}
+   @keyframes anticlock-move {
+    0%   {transform: rotate(360deg); background: red;}
+    25%  {transform: rotate(270deg); background: blue;}
+    50%  {transform: rotate(180deg); background: yellow;}
+    75%  {transform: rotate(90deg); background: green;}
+    100% {transform: rotate(0deg); background: red;}
+}
+@keyframes clock-move {
+    0%   {transform: rotate(0deg); background: red;}
+    25%  {transform: rotate(90deg); background: blue;}
+    50%  {transform: rotate(180deg); background: yellow;}
+    75%  {transform: rotate(270deg); background: green;}
+    100% {transform: rotate(360deg); background: red;}
+}
+@keyframes nose-zooml {
+    0%   {transform: scale(0.5,0.5); background: red;}
+    50%  {transform: scale(2,3); background: blue;}
+    100%  {transform: scale(o.5,0.5); background: yellow;}
+    75%  {transform: scale(2,3); background: green;}
+    100% {transform: scale(0.5,0.5); background: red;}
+}
+@keyframes nose-zoomr {
+    0%   {transform: scale(0.5,0.5); background: yellow;}
+    25%  {transform: scale(2,3); background: red;}
+    50%  {transform: scale(o.5,0.5); background: blue;}
+    75%  {transform: scale(2,3); background: green;}
+    100% {transform: scale(0.5,0.5); background: red;}
+}
+#leye
+   {
+    background-color: lightgrey;
+    width: 10px;
+    height:10px;
+    padding: 5px;
+    border: 10px solid black;
+    top:50px;
+    float:left;
+    animation: clock-move 5s infinite;
+}
+#reye
+   {
+    background-color: lightgrey;
+    width: 10px;
+    height:10px;
+    padding: 5px;
+    border: 10px solid black;
+    margin: 5px;
+    float:right;
+    animation: anticlock-move 5s infinite;
+}
+#eyeball
+   {
+    background-color: black;
+    width: 1px;
+    height:1px;
+    padding: 2px;
+    border: 2px solid black;
+    margin: 1px;
+    border-radius: 10px;
+    position:relative;
+}
+#lnose
+   {
+    background-color: lightgrey;
+    width: 0.5px;
+    height:1px;
+    padding: 1px;
+    border: 2px solid black;
+    margin-top: 110px;
+    margin-left: 100px;
+    float:left;
+    animation: nose-zooml 1s infinite;
+}
+#rnose
+   {
+    background-color: lightgrey;
+    width: 0.5px;
+    height:1px;
+    padding: 1px;
+    border: 2px solid black;
+    margin-top: 110px;
+    margin-right: 100px;
+    float:right;
+    animation: nose-zooml 1s infinite;
+}
+#smile{
+    margin-top: 210px;
+    margin-left: 70px;
+}
+.appear 
+{
+    width: 100px; 
+    height:60px;
+    border: #000 2px solid;
+    background:lightgrey;
+    top: 2px;
+    left:15px;
+    display:none;
+    padding: 0 5px 5px 5px;
+    z-index: 1000000;
+}
+.hover 
+{
+    cursor:pointer;
+    width: 5px;
+}
+.hover:hover .appear 
+{
+    display:block;
+    position:relative;
+}
+.hover:hover .arrow-down{
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid blue; 
+}
+@media screen and  (max-width: 400px) {
+.face {
+    background-color: lightgrey;
+    width: 200px;
+    height:260px;
+    padding: 5px;
+    border: 10px solid black;
+    margin: 10px;
+    border-radius: 30px;
+    clear:both;
+}
+#smile{
+    margin-top: 210px;
+    margin-left: 50px;
+}
+}

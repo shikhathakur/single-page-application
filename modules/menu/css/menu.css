@@ -1,0 +1,98 @@
+/* ============================================================
+  MENU NAVIGATION
+============================================================ */
+nav.menu ul ul {
+	display: none;
+	z-index: 1;
+}
+nav.menu ul li:hover > ul {
+	display: block;
+}
+nav.menu ul {
+	background: #E4000D url(../image/bg-2.jpg) repeat;padding:0px 400px;
+	border-radius: 10px;  
+	list-style: none;
+	position: relative;
+	display: inline-table;
+	margin-left: 20px;
+}
+nav.menu ul li {
+	float: left;
+}
+nav.menu ul li:hover {
+	background: #292522 url(../image/bg.png) repeat center;color: #3F3F3F;
+	cursor: pointer;
+	
+}
+nav.menu ul li:hover a {
+	color: #fff;
+}
+nav.menu ul li a {
+	display: block; padding: 10px 40px;
+	color: white; text-decoration: none;
+}
+nav.menu ul ul {
+	background: #E4000D url(../image/bg-2.jpg); border-radius: 0px; padding: 0;
+	position: absolute; 
+}
+nav.menu ul ul li {
+	float: none; 
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	position: relative;
+}
+nav.menu ul ul li a {
+	padding: 3px 30px;
+	color: #bfbfbf;
+}	
+nav.menu ul ul li a:hover {
+	background: black;
+}
+#cover{ position:fixed; top:0; left:0; background:rgba(0,0,0,0.6); z-index:5; width:100%; height:100%; display:none; } 
+#loginScreen {  height:380px; width:400px; margin:0 auto; position:relative; z-index:10; display:none; border:5px solid #cccccc; border-radius:10px;background-color: #333333; } 
+#loginScreen:target, #loginScreen:target + #cover{ display:block; opacity:2; } 
+.cancel { display:block; position:absolute; top:3px; right:2px; background:rgb(245,245,245); color:black; height:30px; width:35px; font-size:30px; text-decoration:none; text-align:center; font-weight:bold; }
+#loginScreen p{font-size:20px;color:white;} 
+
+@media screen and (max-width: 600px) {
+/* media queries for menu */
+nav.menu ul {
+    padding:10px 18px;
+    margin-left: 0px;
+}
+nav.menu ul ul li {
+    width: 200px;
+  }
+  
+}
+@media screen and (max-width:400px){
+nav.menu ul {
+	background: #E4000D url(../image/bg-2.jpg) repeat;
+	border-radius: 10px;  
+	list-style: none;
+	position: absolute;
+	display: inline-table;
+	margin-left: 10px;
+}
+nav.menu ul li {
+	float: none;
+	position: relative;
+	width:80px;
+}
+nav.menu ul li:hover {
+	background: #292522 url(../image/bg.png) repeat center;color: #3F3F3F;
+	cursor: pointer;
+}
+nav.menu ul li a {
+	padding: 2px 10px;
+	color: white;
+	font-size: 12px
+}
+nav.menu ul ul{
+	top:0px;
+	margin-left: 80px;
+
+}
+nav.menu ul ul li{
+	width:100px;
+}

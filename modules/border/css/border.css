@@ -1,0 +1,16 @@
+#borderimg1 { 
+    border: 10px solid transparent;
+    padding: 15px;
+    color:white;
+    -webkit-border-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjmLbsR2NlEnrCkm7ZStvSmV03p1X_iWnFn2enp3D16eGfDdos2g) 30 round; /* Safari 3.1-5 */
+    -o-border-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjmLbsR2NlEnrCkm7ZStvSmV03p1X_iWnFn2enp3D16eGfDdos2g) 30 round; /* Opera 11-12.1 */
+	border-image:url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjmLbsR2NlEnrCkm7ZStvSmV03p1X_iWnFn2enp3D16eGfDdos2g) 30 round;
+	height:80px;
+	width:300px;
+}
+@media screen and  (max-width: 400px) {
+#borderimg1 { 
+    height:120px;
+	width:200px;
+}
+}
